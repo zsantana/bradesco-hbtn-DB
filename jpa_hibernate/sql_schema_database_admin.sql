@@ -1,0 +1,16 @@
+CREATE TABLE pessoa (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    idade INTEGER,
+    cpf TEXT NOT NULL UNIQUE,
+    dataNascimento DATE
+);
+
+CREATE TABLE produto (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco REAL NOT NULL,
+    status BOOLEAN NOT NULL
+);
